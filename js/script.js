@@ -17,7 +17,7 @@ console.log(submit);
 const cancel = document.getElementById("cancel")
 console.log(cancel)
 
-const nameOutput = document.querySelector(".passenger-name")
+const nameOutput = document.getElementById("passenger-name")
 console.log(nameOutput);
 
 const carriage = document.getElementById("carriage")
