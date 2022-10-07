@@ -13,6 +13,10 @@ console.log(userAge);
 const submit = document.getElementById("submit");
 console.log(submit);
 
-submit.addEventListener("click" function() {
-    const userDistanceValue = userDistance.ariaValueMax;
+submit.addEventListener("click", function () {
+    const userDistanceValue = userDistance.value;
+    console.log(userDistanceValue);
+    
+    const userAgeValue = userAge.value;
+    console.log(userAgeValue);
 })
