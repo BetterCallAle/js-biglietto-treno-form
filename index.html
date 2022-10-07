@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferrovie Dello Stato</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
     <div class="form">
+        <div class="user-name">
+            <label for="name">Nome e Cognome</label>
+            <input type="text" id="name">
+        </div>
+
         <div class="top-form">
             <label for="km">Inserisci la distanza in km</label>
             <input type="text" id="km">
@@ -20,10 +30,11 @@
             <input type="text" id="age">
         </div>
 
-        <button id="submit">Submit</button>
+        <button id="submit">Genera</button>
+        <button id="cancel">Annulla</button>
     </div>
 
-    <h1 id="title">Il prezzo finale è di </h1>
+    <h2 id="title">IL TUO BIGLIETTO</h2>
     
     <script src="js/script.js"></script>
 </body>

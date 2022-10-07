@@ -11,8 +11,14 @@ console.log(userAge);
 const submit = document.getElementById("submit");
 console.log(submit);
 
-const title = document.querySelector("h1")
+const title = document.querySelector("")
 console.log(title);
+
+const userName = document.getElementById("name");
+console.log(userName);
+
+const cancel = document.getElementById("cancel")
+console.log(cancel)
 
 //function
 submit.addEventListener("click", function () {
@@ -24,6 +30,9 @@ submit.addEventListener("click", function () {
 
     const ticketPrice = userDistanceValue * basePrice;
     console.log(ticketPrice);
+
+    const userNameValue = userName.value;
+    console.log(userNameValue);
 
     //if
     let userDiscount = 0
@@ -42,6 +51,7 @@ submit.addEventListener("click", function () {
     console.log(userDiscount);
     
     //cleaning the input
+    userName.value = ""
     userDistance.value = ""
     userAge.value = ""
 
@@ -51,4 +61,11 @@ submit.addEventListener("click", function () {
 
     //output
     title.innerHTML = `Il prezzo finale è €${finalPrice}`
+})
+
+//cancel button
+cancel.addEventListener("click", function (){ 
+    userName.value = ""
+    userDistance.value = ""
+    userAge.value = ""
 })
