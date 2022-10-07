@@ -12,30 +12,34 @@
 </head>
 <body>
 
+    <!-- HEADER -->
     <header class="text-center">
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </header>
+    <!-- /HEADER -->
 
+    <!-- MAIN -->
     <main>
+        <!-- FORM -->
         <section id="form">
             <div class="form-top">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-4">
+                    <div class="row row-cols-3">
+                        <div class="col">
                             <div class="user-name text-center">
                                 <label for="name">Nome e Cognome</label>
                                 <input type="text" id="name">
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col">
                             <div class="distance text-center">
                                 <label for="km">Inserisci la distanza in km</label>
                                 <input type="text" id="km">
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col">
                             <div class="user-age text-center">
                                 <label for="age">Inserisci la tua età</label>
                                 <input type="text" id="age">
@@ -50,7 +54,9 @@
                 <button id="cancel">Annulla</button>
             </div>
         </section>
+        <!-- /FORM -->
     
+        <!-- DATA -->
         <section id="data">
            <div class="wrapper">
                 <div class="container">
@@ -59,7 +65,7 @@
                     </div>
 
                     <div class="section-main">
-                        <div class="row">
+                        <div class="row row-cols-5">
                             <div class="col">
                                 <div class="passenger-data">
                                     <h4>NOME DEL PASSEGGERO</h3>
@@ -97,16 +103,14 @@
                         </div>
                     </div>
                 </div>
-               
-
-            
-           </div>
-            
+            </div>
         </section>
+        <!-- /SECTION -->
     </main>
+    <!-- /MAIN -->
 
     
-    
+    <!-- JS -->
     <script src="js/script.js"></script>
 </body>
 </html>
