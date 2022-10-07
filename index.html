@@ -13,7 +13,7 @@
 <body>
 
     <!-- HEADER -->
-    <header class="text-center">
+    <header class="text-center text-light">
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </header>
     <!-- /HEADER -->
@@ -22,46 +22,52 @@
     <main>
         <!-- FORM -->
         <section id="form">
-            <div class="form-top">
-                <div class="container">
-                    <div class="row row-cols-3">
-                        <div class="col">
-                            <div class="user-name text-center">
-                                <label for="name">Nome e Cognome</label>
-                                <input type="text" id="name">
+            <div class="wrapper wrapper-top">
+                <div class="form-top">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-lg-3 gy-4">
+                            <div class="col">
+                                <div class="user-name text-center">
+                                    <label for="name">Nome e Cognome</label>
+                                    <input type="text" id="name">
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="distance text-center">
-                                <label for="km">Inserisci la distanza in km</label>
-                                <input type="text" id="km">
+    
+                            <div class="col">
+                                <div class="distance text-center">
+                                    <label for="km">Inserisci la distanza in km</label>
+                                    <input type="text" id="km">
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="user-age text-center">
-                                <label for="age">Inserisci la tua età</label>
-                                <input type="text" id="age">
+    
+                            <div class="col">
+                                <div class="user-age text-center">
+                                    <label for="age">Inserisci la tua età</label>
+                                    <input type="text" id="age">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-bottom text-center">
-                <button id="submit">Genera</button>
-                <button id="cancel">Annulla</button>
+                <div class="form-bottom text-center mt-5">
+                    <button id="submit">Genera</button>
+                    <button id="cancel">Annulla</button>
+                </div>
             </div>
         </section>
         <!-- /FORM -->
     
         <!-- DATA -->
         <section id="data">
-           <div class="wrapper">
+            <div class="section-heading text-center text-light">
+                <h2>IL TUO BIGLIETTO</h2>
+            </div>
+
+           <div class="wrapper wrapper-bottom">
                 <div class="container">
-                    <div class="section-heading">
-                        <h2>DATI DEL PASSEGGERO:</h2>
+                    <div class="passenger-data-heading">
+                        <h3>DATI DEL PASSEGGERO:</h3>
                     </div>
 
                     <div class="section-main">

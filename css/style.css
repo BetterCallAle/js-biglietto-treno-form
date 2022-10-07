@@ -1,1 +1,40 @@
+/* VARS */
+:root{
+    /* colors */
+    --main-purple: #b91450; 
+}
+
 /* COMMON */
+body{
+    background-color: var(--main-purple);
+}
+
+section{
+    padding: 2rem 0;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+}
+
+/* HEADER */
+header{
+    padding: 1rem 0;
+}
+/* MAIN */
+/* form */
+.wrapper-top{
+    border-radius: 40px;
+}
+
+button{
+    color: var(--main-purple);
+    background-color: white;
+    border: 2px solid var(--main-purple);
+    border-radius: 10px;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
