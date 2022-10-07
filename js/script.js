@@ -26,6 +26,9 @@ console.log(carriage);
 const code = document.getElementById("code")
 console.log(code)
 
+const priceElement = document.getElementById("price")
+console.log(priceElement)
+
 //function
 submit.addEventListener("click", function () {
     const userDistanceValue = parseFloat(userDistance.value);
@@ -69,6 +72,7 @@ submit.addEventListener("click", function () {
     nameOutput.innerHTML = userNameValue
     carriage.innerHTML = Math.floor(Math.random() * 11);
     code.innerHTML = Math.floor(Math.random() * 9999) + 1000
+    priceElement.innerHTML = `€${finalPrice}`
 })
 
 //cancel button
