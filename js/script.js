@@ -1,7 +1,5 @@
 //i dati
 const basePrice = 0.21;
-const saleUnder = 0.20;
-const saleOver = 0.40;
 
 //html extracted elements
 const userDistance = document.getElementById("km");
@@ -13,10 +11,25 @@ console.log(userAge);
 const submit = document.getElementById("submit");
 console.log(submit);
 
+//function
 submit.addEventListener("click", function () {
-    const userDistanceValue = userDistance.value;
-    console.log(userDistanceValue);
+    const userDistanceValue = parseFloat(userDistance.value);
+    console.log(userDistanceValue, typeof userDistanceValue);
     
-    const userAgeValue = userAge.value;
-    console.log(userAgeValue);
+    const userAgeValue = parseFloat (userAge.value);
+    console.log(userAgeValue, typeof userAgeValue);
+
+    const ticketPrice = userDistanceValue * basePrice;
+    console.log(ticketPrice);
+
+    //if
+    let userDiscount = 0
+
+    if (userAgeValue < 18){
+        userDiscount = 20;
+    } else if (userAgeValue > 65){
+        userDiscount = 40;
+    }
+
+    console.log(userDiscount);
 })
