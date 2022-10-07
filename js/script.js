@@ -1,4 +1,4 @@
-//i dati
+//data
 const basePrice = 0.21;
 
 //html extracted elements
@@ -10,6 +10,9 @@ console.log(userAge);
 
 const submit = document.getElementById("submit");
 console.log(submit);
+
+const title = document.getElementById("title")
+console.log(title);
 
 //function
 submit.addEventListener("click", function () {
@@ -32,4 +35,14 @@ submit.addEventListener("click", function () {
     }
 
     console.log(userDiscount);
+    
+    //cleaning the input
+    userDistance.value = ""
+    userAge.value = ""
+
+    //final price
+    const finalPrice = (ticketPrice - (ticketPrice * userDiscount / 100)).toFixed(2)
+    console.log(finalPrice);
+
+
 })
