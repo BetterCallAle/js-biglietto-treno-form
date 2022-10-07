@@ -11,7 +11,7 @@ console.log(userAge);
 const submit = document.getElementById("submit");
 console.log(submit);
 
-const title = document.getElementById("title")
+const title = document.querySelector("h1")
 console.log(title);
 
 //function
@@ -32,6 +32,11 @@ submit.addEventListener("click", function () {
         userDiscount = 20;
     } else if (userAgeValue > 65){
         userDiscount = 40;
+    } else if (isNaN(userDistanceValue)) {
+        alert("Hai inserito caratteri non ammessi come distanza in km")
+
+    } else if (isNaN(userAgeValue)) {
+        alert("Hai inserito caratteri non ammessi come età")
     }
 
     console.log(userDiscount);
@@ -44,5 +49,6 @@ submit.addEventListener("click", function () {
     const finalPrice = (ticketPrice - (ticketPrice * userDiscount / 100)).toFixed(2)
     console.log(finalPrice);
 
-
+    //output
+    title.innerHTML = `Il prezzo finale è €${finalPrice}`
 })
