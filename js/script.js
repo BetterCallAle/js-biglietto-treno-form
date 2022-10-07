@@ -2,6 +2,9 @@
 const basePrice = 0.21;
 
 //html extracted elements
+const userName = document.getElementById("name");
+console.log(userName);
+
 const userDistance = document.getElementById("km");
 console.log(userDistance);
 
@@ -11,14 +14,17 @@ console.log(userAge);
 const submit = document.getElementById("submit");
 console.log(submit);
 
-const title = document.querySelector("")
-console.log(title);
-
-const userName = document.getElementById("name");
-console.log(userName);
-
 const cancel = document.getElementById("cancel")
 console.log(cancel)
+
+const nameOutput = document.querySelector(".passenger-name")
+console.log(nameOutput);
+
+const carriage = document.getElementById("carriage")
+console.log(carriage);
+
+const code = document.getElementById("code")
+console.log(code)
 
 //function
 submit.addEventListener("click", function () {
@@ -60,7 +66,9 @@ submit.addEventListener("click", function () {
     console.log(finalPrice);
 
     //output
-    title.innerHTML = `Il prezzo finale è €${finalPrice}`
+    nameOutput.innerHTML = userNameValue
+    carriage.innerHTML = Math.floor(Math.random() * 11);
+    code.innerHTML = Math.floor(Math.random() * 9999) + 1000
 })
 
 //cancel button

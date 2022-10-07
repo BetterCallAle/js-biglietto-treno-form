@@ -12,29 +12,93 @@
 </head>
 <body>
 
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <header class="text-center">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </header>
 
-    <div class="form">
-        <div class="user-name">
-            <label for="name">Nome e Cognome</label>
-            <input type="text" id="name">
-        </div>
+    <main>
+        <section id="form">
+            <div class="form-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="user-name text-center">
+                                <label for="name">Nome e Cognome</label>
+                                <input type="text" id="name">
+                            </div>
+                        </div>
 
-        <div class="top-form">
-            <label for="km">Inserisci la distanza in km</label>
-            <input type="text" id="km">
-        </div>
+                        <div class="col-4">
+                            <div class="distance text-center">
+                                <label for="km">Inserisci la distanza in km</label>
+                                <input type="text" id="km">
+                            </div>
+                        </div>
 
-        <div class="bottom-form">
-            <label for="age">Inserisci la tua età</label>
-            <input type="text" id="age">
-        </div>
+                        <div class="col-4">
+                            <div class="user-age text-center">
+                                <label for="age">Inserisci la tua età</label>
+                                <input type="text" id="age">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <button id="submit">Genera</button>
-        <button id="cancel">Annulla</button>
-    </div>
+            <div class="form-bottom text-center">
+                <button id="submit">Genera</button>
+                <button id="cancel">Annulla</button>
+            </div>
+        </section>
+    
+        <section id="data">
+           <div class="wrapper">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2>DATI DEL PASSEGGERO:</h2>
+                    </div>
 
-    <h2 id="title">IL TUO BIGLIETTO</h2>
+                    <div class="section-main">
+                        <div class="row">
+                            <div class="col">
+                                <div class="passenger-data">
+                                    <h3>NOME DEL PASSEGGERO</h3>
+                                    <p class="passenger-name">Il tuo nome</p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="offer">
+                                    <h4>Offerta</h4>
+                                    <p>Biglietto Standard</p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="carriage">
+                                    <h4>Carrozza</h4>
+                                    <p id="carriage">La tua carrozza</p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="code">
+                                    <h4>Codice CP</h4>
+                                    <p id="code">Il tuo codice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+            
+           </div>
+            
+        </section>
+    </main>
+
+    
     
     <script src="js/script.js"></script>
 </body>
