@@ -34,7 +34,7 @@ submit.addEventListener("click", function () {
     const userDistanceValue = parseFloat(userDistance.value);
     console.log(userDistanceValue, typeof userDistanceValue);
     
-    const userAgeValue = parseFloat (userAge.value);
+    const userAgeValue = parseInt (userAge.value);
     console.log(userAgeValue, typeof userAgeValue);
 
     const ticketPrice = userDistanceValue * basePrice;
@@ -51,8 +51,7 @@ submit.addEventListener("click", function () {
     } else if (userAgeValue > 65){
         userDiscount = 40;
     } else if (isNaN(userDistanceValue)) {
-        alert("Hai inserito caratteri non ammessi come distanza in km")
-
+        alert("Hai inserito caratteri non ammessi come distanza in km");
     } else if (isNaN(userAgeValue)) {
         alert("Hai inserito caratteri non ammessi come età")
     }
